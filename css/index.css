@@ -9,12 +9,15 @@ html {
 
 .nombre-sitio span {
     color: #037bc0;
+    
 }
 
-/*.navegacion {
 
+.nombre-sitio {
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
-*/
+
 
 .enlace {
     text-transform: uppercase;
