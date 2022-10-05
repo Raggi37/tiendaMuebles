@@ -6,25 +6,98 @@ html {
     box-sizing: inherit;
 } 
 
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+/*Globales*/
+
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+/*margin arriba abajo = 0 derecha izq = auto*/
+.contenedor {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+
+/**Header y NAv **/
+
+.nombre-sitio {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
 
 .nombre-sitio span {
     color: #037bc0;
     
 }
 
-
-.nombre-sitio {
-    margin-top: 50px;
-    margin-bottom: 50px;
+.contenedor-navegacion {
+    border-top: 1px solid #e1e1e1;
 }
 
 
-.enlace {
-    text-transform: uppercase;
-    font-weight: bold;
-    text-decoration: none;
-    color:#037bc0;
+.nav_principal {
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
 }
+
+/*imagen principal
+"Hero" es la clase que habitualmente se utiliza para 
+las imagenes principales*/
+
+
+.hero {
+    background-image: url(../img/principal.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 550px;
+}
+
+/*Categorias*/
+
+.categorias h2 {
+    text-align: center;
+}
+
+
+/* display block es para que se mueva*/
+.categoria a {
+    text-align: center;
+    display: block;
+    padding: 20px;
+    font-size: 20px;
+}
+
+.categoria a:hover {
+    background-color: #037bc0;
+    color: #fff;
+    border-bottom-right-radius: 10px;
+}
+
+
+.listado-categorias {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
 
 /*box model*/
 
@@ -41,3 +114,4 @@ html {
     padding: 100px;
     box-sizing: border-box;
 }
+
